@@ -1,4 +1,6 @@
+hostname_my = node['hostname']
+
 file '/etc/motd' do
-      content 'Hello motd'
+      content "hostname is this:  #{hostname_my}" 
 end
 
